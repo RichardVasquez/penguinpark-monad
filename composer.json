@@ -32,7 +32,6 @@
     "test": "phpunit",
     "mutate": "infection --threads=4 --min-msi=100 --ansi"
   },
-  "version": "0.1.1",
   "repositories": {
     "packagist": {
       "type": "git",
