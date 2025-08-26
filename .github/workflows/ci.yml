@@ -35,7 +35,7 @@ jobs:
           dependency-versions: highest
           composer-options: --no-interaction --prefer-dist --optimize-autoloader
 
-      - run: vendor/bin/phpunit --coverage-clover build/coverage/clover.xml --coverage-xml build/coverage-xml
+      - run: vendor/bin/phpunit
 
       - name: Infection (8.4 only)
         if: ${{ matrix.php == '8.4' }}
