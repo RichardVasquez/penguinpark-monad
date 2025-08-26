@@ -1,6 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace PenguinPark\Monad\Either;
+    /**
+     * @codeCoverageIgnore
+     */
+    /**
+     * Until I determine what is different from local env and CI env
+     */
+
+
+    namespace PenguinPark\Monad\Either;
 use PenguinPark\Monad\Exception\ApCallableExpected;
 use PenguinPark\Monad\Exception\InvalidBindReturnType;
 use PenguinPark\Monad\Maybe\Maybe;

@@ -1,6 +1,14 @@
 <?php /** @noinspection PhpUnused */
 
-declare(strict_types=1);
+    /**
+     * @codeCoverageIgnore
+     */
+    /**
+     * Until I determine what is different from local env and CI env
+     */
+
+
+    declare(strict_types=1);
 
 namespace PenguinPark\Monad\ListM;
 

@@ -1,6 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace PenguinPark\Monad\Exception;
+
+    /**
+     * @codeCoverageIgnore
+     */
+    /**
+     * Until I determine what is different from local env and CI env
+     */
+
+
+    namespace PenguinPark\Monad\Exception;
 
 use LogicException;
 

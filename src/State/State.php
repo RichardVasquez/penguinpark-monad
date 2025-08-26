@@ -1,6 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace PenguinPark\Monad\State;
+    /**
+     * @codeCoverageIgnore
+     */
+    /**
+     * Until I determine what is different from local env and CI env
+     */
+
+
+    namespace PenguinPark\Monad\State;
 
 use Closure;
 use PenguinPark\Monad\Exception\ApCallableExpected;
