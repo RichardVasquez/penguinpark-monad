@@ -17,7 +17,7 @@
       "email": "github.com@callahansplace.org"
     }],
   "require": {
-    "php": ">=8.4"
+    "php": ">=8.3"
   },
   "require-dev": {
     "infection/infection": "^0.31.1",
