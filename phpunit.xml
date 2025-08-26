@@ -27,5 +27,5 @@
                               <options>
                 <requireCoverageMetadata>false</requireCoverageMetadata>
             </options>
-         </coverage
+         </coverage>
 </phpunit>
