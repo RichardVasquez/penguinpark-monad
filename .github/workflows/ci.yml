@@ -35,8 +35,24 @@ jobs:
           dependency-versions: highest
           composer-options: --no-interaction --prefer-dist --optimize-autoloader
 
-      - run: vendor/bin/phpunit
+      - name: PHPUnit (coverage artifacts for Infection)
+        run: |
+          mkdir -p build/coverage-xml
+          vendor/bin/phpunit \
+            --coverage-xml build/coverage-xml \
+            --log-junit build/coverage-xml/phpunit.junit.xml
 
-      - name: Infection (8.4 only)
-        if: ${{ matrix.php == '8.4' }}
-        run: vendor/bin/infection --threads=4 --coverage=build/coverage-xml --min-msi=100 --ansi --log-verbosity=all
+#      - run: vendor/bin/phpunit
+
+      - name: Infection
+        run: |
+          vendor/bin/infection \
+            --threads=4 \
+            --coverage=build/coverage-xml \
+            --min-msi=100 \
+            --ansi \
+            --log-verbosity=all
+
+#      - name: Infection (8.4 only)
+#        if: ${{ matrix.php == '8.4' }}
+#        run: vendor/bin/infection --threads=4 --coverage=build/coverage-xml --min-msi=100 --ansi --log-verbosity=all
