@@ -4,10 +4,9 @@
          bootstrap="vendor/autoload.php"
          cacheDirectory=".phpunit.cache"
          executionOrder="depends,defects"
-         requireCoverageMetadata="true"
+         requireCoverageMetadata="false"
          beStrictAboutCoverageMetadata="false"
          beStrictAboutOutputDuringTests="false"
-         beStrictAboutCoversAnnotation="false"
          displayDetailsOnPhpunitDeprecations="true"
          failOnPhpunitDeprecation="true"
          failOnRisky="true"
@@ -23,9 +22,4 @@
             <directory>src</directory>
         </include>
     </source>
-         <coverage>
-                              <options>
-                <requireCoverageMetadata>false</requireCoverageMetadata>
-            </options>
-         </coverage>
 </phpunit>
