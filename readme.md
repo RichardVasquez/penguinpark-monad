@@ -6,7 +6,7 @@
 
 I made a mistake.
 
-I decided to make a parser, and I’d gotten very used to what the **Sprache** library does for .NET. Underneath it is a bunch of LINQ magic — which PHP does not have. So: a couple of years of poking at **ANTLR**, reading about **packrat parsers**, trying to remember the difference between **LL** and **LR** (no need to explain it to me), and getting **really, really peeved**.
+I decided to make a parser, and I’d gotten very used to what the **Sprache** library does for .NET. Underneath it is a bunch of LINQ magic - which PHP does not have. So: a couple of years of poking at **ANTLR**, reading about **packrat parsers**, trying to remember the difference between **LL** and **LR** (no need to explain it to me), and getting **really, really peeved**.
 
 Then I ran across **OCaml**, and all these friendly tutorials showing how easy and *pleasant* combinator parsers are. Great! Still not PHP. *sigh*
 
@@ -19,7 +19,7 @@ The need didn’t go away: I still want a combinator parser. My first drafts wer
 
 **Start over.** Give the parser a foundation. This library is that foundation. *Tada!*
 
-It’s licensed **Apache-2.0** — please do whatever you want with it. Send PRs; I know I’m not covering everything (yet) in functions or tests. I’m calling this “good enough for now.” Enjoy!
+It’s licensed **Apache-2.0** - please do whatever you want with it. Send PRs; I know I’m not covering everything (yet) in functions or tests. I’m calling this “good enough for now.” Enjoy!
 
 ---
 
@@ -137,7 +137,7 @@ This lets tests assert precise failures instead of string messages.
 
 ---
 
-## Validation (Applicative) — *optional, if enabled*
+## Validation (Applicative) - *optional, if enabled*
 
 If you’ve pulled in the **0.1.1** changes:
 
@@ -188,4 +188,4 @@ Issues and PRs welcome. Please include tests. If you’re fixing edge cases in `
 
 ## License
 
-Apache-2.0 — see `LICENSE`.
+Apache-2.0 - see `LICENSE`.
