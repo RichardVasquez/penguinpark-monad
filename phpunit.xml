@@ -23,4 +23,9 @@
             <directory>src</directory>
         </include>
     </source>
+         <coverage>
+                              <options>
+                <requireCoverageMetadata>false</requireCoverageMetadata>
+            </options>
+         </coverage
 </phpunit>
