@@ -1,0 +1,61 @@
+{
+  "$schema": "vendor/infection/infection/resources/schema.json",
+  "source": {
+    "directories": [
+      "src"
+    ]
+  },
+  "logs": {
+//    "text": "infect.log"  // Stock path to text log, uncomment to use, and remove the next line.
+    "text": "local/infect.log"  // path to text log
+  },
+  "timeout": 10,
+  "phpUnit": {
+    "configDir": ".",
+    "customPath": "vendor/bin/phpunit"
+  },
+  "mutators": {
+    "@default": true,
+    "FunctionCallRemoval": {
+      "ignore": [
+        "PenguinPark\\Monad\\State\\State::run"  // to avoid meaningless mutations of setIteratorMode
+      ]
+    },
+    "UnwrapArrayValues": {
+      "ignore": [
+        "PenguinPark\\Monad\\Writer\\Writer::__construct"
+      ]
+    },
+    "LogicalAnd": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    },
+    "LogicalOr": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    },
+    "LogicalOrAllSubExprNegation": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    },
+    "LogicalOrNegation": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    },
+    "LogicalOrSingleSubExprNegation": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    },
+    "ReturnRemoval": {
+      "ignore": [
+        "PenguinPark\\Monad\\Util\\Eq::valueEq"
+      ]
+    }
+  }
+}
+

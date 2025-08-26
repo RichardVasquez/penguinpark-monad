@@ -1,0 +1,6 @@
+# Ignore IDE and vendor files
+.idea/*
+vendor/*
+
+# Ignore local files; notes and such
+local/
