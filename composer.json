@@ -28,6 +28,16 @@
       "infection/extension-installer": true
     }
   },
+  "keywords": [
+    "monad",
+    "functor",
+    "functional-programming",
+    "maybe",
+    "either",
+    "validation",
+    "io",
+    "state",
+    "reader" ],
   "scripts": {
     "test": "phpunit",
     "mutate": "infection --threads=4 --min-msi=100 --ansi"
